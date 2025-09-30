@@ -72,7 +72,7 @@ export default function PricingSection() {
     },
   ];
 
-  const getPrice = (plan) => {
+  const getPrice = (plan: (typeof plans)[number]) => {
     if (plan.customPricing) return plan.customPricing;
     const price = isYearly ? plan.yearlyPrice : plan.monthlyPrice;
     return `$${price}`;
@@ -164,11 +164,14 @@ export default function PricingSection() {
                     {plan.period}
                   </span>
                 </div>
-                {isYearly && !plan.customPricing && (
-                  <p className="text-sm text-green-600 mt-2">
-                    Save ${(plan.monthlyPrice - plan.yearlyPrice) * 12}/year
-                  </p>
-                )}
+                {isYearly &&
+                  !plan.customPricing &&
+                  plan.monthlyPrice !== null &&
+                  plan.yearlyPrice !== null && (
+                    <p className="text-sm text-green-600 mt-2">
+                      Save ${(plan.monthlyPrice - plan.yearlyPrice) * 12}/year
+                    </p>
+                  )}
               </div>
 
               <ul className="space-y-4 mb-8">

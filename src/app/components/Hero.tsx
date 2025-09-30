@@ -5,6 +5,7 @@ import { Play, ArrowRight, Star, Users, Zap } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import type { Variants } from "framer-motion";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -40,7 +41,7 @@ export default function HeroSection() {
     }
   }, []);
 
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -51,18 +52,17 @@ export default function HeroSection() {
     },
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { opacity: 0, y: 30 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
         duration: 0.6,
-        ease: "easeOut",
+        ease: [0.25, 0.1, 0.25, 1],
       },
     },
   };
-
   return (
     <section
       ref={heroRef}
