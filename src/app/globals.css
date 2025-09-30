@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+:root {
+  --background: 0 0% 100%;
+  --foreground: 222.2 47.4% 11.2%;
+  --card: 0 0% 100%;
+  --card-foreground: 222.2 47.4% 11.2%;
+  --primary: 221.2 83.2% 53.3%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 210 40% 96.1%;
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --ring: 221.2 83.2% 53.3%;
+  --yellow-400: 47 89% 60%;
+  --gradient-start: #535962;
+  --gradient-mid: #354E73;
+  --gradient-end: #1A427E;
+  --subtext-bg: rgba(83, 83, 83, 1);
+}
+
+body {
+  margin: 0;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.bg-grid {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 1px, transparent 5px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 1px, transparent 5px);
+  background-size: 40px 40px;
+}
+
+.bg-subtext {
+  background: var(--subtext-bg);
+}
+
+.gradient-text {
+  background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-mid) 50%, var(--gradient-end) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@layer base {
+  h1 {
+    font-family: 'Bricolage Grotesque', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 72px;
+    letter-spacing: -2%;
+    text-align: center;
+  }
+  p {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -1.9%;
+  }
+}
