@@ -41,7 +41,7 @@ export default function Footer() {
               href="/"
               className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent mb-6 block"
             >
-              CRM
+              Tijarhub
             </Link>
             <p className="text-gray-300 mb-6 leading-relaxed">
               The complete business management platform. Streamline sales,
@@ -132,7 +132,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <div className="text-gray-400 mb-4 md:mb-0">
-              © 2025 CRMPro. All rights reserved.
+              © 2025 Tijarhub. All rights reserved.
             </div>
             <div className="flex flex-wrap gap-6 text-sm">
               <Link

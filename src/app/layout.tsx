@@ -15,7 +15,7 @@ const schibstedGrotesk = Schibsted_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "CRM System - Manage Sales, Customers & Operations Seamlessly",
+  title: "Tijarhub System - Manage Sales, Customers & Operations Seamlessly",
   description:
     "A powerful, secure CRM platform to streamline sales, customer management, inventory, and operations with role-based access and real-time insights.",
   keywords: [
@@ -27,20 +27,20 @@ export const metadata: Metadata = {
     "secure CRM",
     "route planning",
   ],
-  authors: [{ name: "CRM System Team", url: "https://www.prospello.tech" }],
+  authors: [{ name: "Tijarhub System Team", url: "https://www.tojarhub.tech" }],
   viewport: "width=device-width, initial-scale=1",
   openGraph: {
-    title: "CRM System - Streamline Your Business",
+    title: "Tijarhub System - Streamline Your Business",
     description:
       "Manage sales, customers, and operations with our modern CRM platform. Secure, scalable, and role-based for admins, salespeople, and accountants.",
-    url: "https://www.prospello.tech",
-    siteName: "CRM System",
+    url: "https://www.tijarhub.tech",
+    siteName: "Tijarhub System",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "CRM System Landing Page",
+        alt: "Tijarhub System Landing Page",
       },
     ],
     locale: "en_US",
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CRM System - Streamline Your Business",
+    title: "Tijarhub System - Streamline Your Business",
     description:
       "A powerful CRM for sales, customer management, and operations.",
     images: ["/images/og-image.jpg"],
   },
   alternates: {
-    canonical: "https://www.prospello.tech",
+    canonical: "https://www.tijarhub.tech",
   },
 };
 

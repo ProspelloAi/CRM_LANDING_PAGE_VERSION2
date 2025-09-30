@@ -19,16 +19,16 @@ export default function Home() {
         item={{
           "@context": "https://schema.org",
           "@type": "WebPage",
-          name: "CRM System Landing Page",
-          url: "https://www.prospello.tech",
+          name: "Tijarhub System Landing Page",
+          url: "https://www.tijarhub.tech",
           description:
             "A powerful CRM platform for managing sales, customers, and operations with secure authentication and role-based access.",
           publisher: {
             "@type": "Organization",
-            name: "CRM System",
+            name: "Tijarhub System",
             logo: {
               "@type": "ImageObject",
-              url: "https://www.crmsystem.com/images/logo.png",
+              url: "https://www.tijarhub.tech/images/logo.png",
             },
           },
         }}
